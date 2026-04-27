@@ -1,0 +1,10 @@
+{
+  "string": [
+    {"name": "app_name", "value": "HmNote"},
+    {"name": "module_desc", "value": "Note-taking app with AI Agent"},
+    {"name": "EntryAbility_desc", "value": "Main entry ability"},
+    {"name": "EntryAbility_label", "value": "HmNote"},
+    {"name": "internet_reason", "value": "Required for AI agent cloud API access"},
+    {"name": "workspace_reason", "value": "Required for local note file management"}
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "releaseVersion": "1.0.0",
+  "compatibleSdkVersion": 12,
+  "compileSdkVersion": 15,
+  "targetSdkVersion": 15,
+  "buildOption": {
+    "nativeLib": {
+      "filter": {
+        "excludes": ["x86_64"]
+      }
+    }
+  }
+}

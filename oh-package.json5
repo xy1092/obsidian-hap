@@ -1,0 +1,10 @@
+{
+  "modelVersion": "5.1.0",
+  "description": "Please describe the basic information.",
+  "dependencies": {},
+  "devDependencies": {
+    "@ohos/hvigor": "5.1.0",
+    "@ohos/hvigor-ohos-plugin": "5.1.0",
+    "@ohos/hvigor-arkui-x-plugin": "5.1.0"
+  }
+}

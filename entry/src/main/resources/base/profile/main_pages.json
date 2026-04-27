@@ -1,0 +1,6 @@
+{
+  "src": [
+    "pages/EditorPage",
+    "pages/SettingsPage"
+  ]
+}

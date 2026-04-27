@@ -1,0 +1,24 @@
+# Rust
+native/target/
+native/**/*.rs.bk
+
+# HarmonyOS
+**/build/
+**/.preview/
+**/oh_modules/
+**/.hvigor/
+**/node_modules/
+
+# IDE
+.idea/
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Sensitive
+*.p12
+*.p7b
+*.csr
+*.jks
