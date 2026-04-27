@@ -96,6 +96,25 @@ export class AgentService {
     }
   }
 
+  /** Process an OCR result with the configured model
+   *  Works with any text-only model (DeepSeek etc.) since OCR text is already extracted
+   */
+  async processImage(ocrText: string, userIntent: string): Promise<string> {
+    const config = this.router.routeTask('analyze');
+    const prompt = [
+      'The following text was extracted from an image via OCR:',
+      '"""',
+      ocrText,
+      '"""',
+      '',
+      userIntent || 'Summarize this content concisely.',
+    ].join('\n');
+
+    return this.execute(config, [
+      { role: 'user', content: prompt },
+    ]);
+  }
+
   private async execute(config: ApiConfig | null, messages: ChatMessage[]): Promise<string> {
     if (!config) return 'Error: No AI model configured. Go to Settings to add an API key.';
 
